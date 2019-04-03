@@ -28,7 +28,28 @@ output "lambda_arn" {
   value       = "${module.parameter_store_task.arn}"
 }
 
+output "lambda_invoke_arn" {
+  description = "The invocation arn of this Lambda function"
+  value       = "${module.parameter_store_task.invoke_arn}"
+}
+
 output "lambda_invoke_policy_arn" {
   description = "The arn of the invocation policy parameter store task Lambda function"
   value       = "${module.parameter_store_task.invoke_policy_arn}"
 }
+
+output "lambda_name" {
+  description = "The name of this Lambda function"
+  value       = "${module.parameter_store_task.name}"
+}
+
+output "lambda_qualified_arn" {
+  description = "The qualified arn of this Lambda function"
+  value       = "${module.parameter_store_task.qualified_arn}"
+}
+
+output "lambda_qualified_invoke_arn" {
+  description = "The qualified invocation arn of the Lambda function"
+  value       = "${module.parameter_store_task.qualified_invoke_arn}"
+}
+
