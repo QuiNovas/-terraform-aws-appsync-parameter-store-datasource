@@ -40,7 +40,7 @@ output "lambda_invoke_policy_arn" {
 
 output "lambda_name" {
   description = "The name of this Lambda function"
-  value       = "${module.parameter__resolver.name}"
+  value       = "${module.parameter_store_resolver.name}"
 }
 
 output "lambda_qualified_arn" {
