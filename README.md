@@ -1,7 +1,7 @@
 # terraform-aws-appsync-parameter-store-datasource
-This module creates an appsync datasource of parameter store task lambda
+This module creates an appsync datasource of parameter store resolver lambda
 
-See [parameter-store-task] (https://github.com/QuiNovas/parameter-store-task) parameter-store-task lambda for more details.
+See [appsync-parameter-store-resolver] (https://github.com/QuiNovas/appsync-parameter-store-resolver) appsync-parameter-store-resolver lambda for more details.
 
 See [appsync-lambda-datasource] (https://github.com/QuiNovas/terraform-aws-appsync-lambda-datasource) for the terraform module of appsynce-lambda-datasource
 

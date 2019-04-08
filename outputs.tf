@@ -24,32 +24,32 @@ output "datasource_role_unique_id" {
 }
 
 output "lambda_arn" {
-  description = "The arn of parameter store task Lambda function"
-  value       = "${module.parameter_store_task.arn}"
+  description = "The arn of parameter store resolver Lambda function"
+  value       = "${module.parameter_store_resolver.arn}"
 }
 
 output "lambda_invoke_arn" {
   description = "The invocation arn of this Lambda function"
-  value       = "${module.parameter_store_task.invoke_arn}"
+  value       = "${module.parameter_store_resolver.invoke_arn}"
 }
 
 output "lambda_invoke_policy_arn" {
-  description = "The arn of the invocation policy parameter store task Lambda function"
-  value       = "${module.parameter_store_task.invoke_policy_arn}"
+  description = "The arn of the invocation policy parameter store resolver Lambda function"
+  value       = "${module.parameter_store_resolver.invoke_policy_arn}"
 }
 
 output "lambda_name" {
   description = "The name of this Lambda function"
-  value       = "${module.parameter_store_task.name}"
+  value       = "${module.parameter__resolver.name}"
 }
 
 output "lambda_qualified_arn" {
   description = "The qualified arn of this Lambda function"
-  value       = "${module.parameter_store_task.qualified_arn}"
+  value       = "${module.parameter_store_resolver.qualified_arn}"
 }
 
 output "lambda_qualified_invoke_arn" {
   description = "The qualified invocation arn of the Lambda function"
-  value       = "${module.parameter_store_task.qualified_invoke_arn}"
+  value       = "${module.parameter_store_resolver.qualified_invoke_arn}"
 }
 
