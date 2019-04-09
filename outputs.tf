@@ -29,7 +29,7 @@ output "lambda_arn" {
 }
 
 output "lambda_invoke_arn" {
-  description = "The invocation arn of this Lambda function"
+  description = "The invocation arn of this resolver function"
   value       = "${module.parameter_store_resolver.invoke_arn}"
 }
 
@@ -39,17 +39,17 @@ output "lambda_invoke_policy_arn" {
 }
 
 output "lambda_name" {
-  description = "The name of this Lambda function"
+  description = "The name of this resolver function"
   value       = "${module.parameter_store_resolver.name}"
 }
 
 output "lambda_qualified_arn" {
-  description = "The qualified arn of this Lambda function"
+  description = "The qualified arn of this resolver Lambda function"
   value       = "${module.parameter_store_resolver.qualified_arn}"
 }
 
 output "lambda_qualified_invoke_arn" {
-  description = "The qualified invocation arn of the Lambda function"
+  description = "The qualified invocation arn of this resolver Lambda function"
   value       = "${module.parameter_store_resolver.qualified_invoke_arn}"
 }
 

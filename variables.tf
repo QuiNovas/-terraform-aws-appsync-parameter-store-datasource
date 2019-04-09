@@ -18,9 +18,3 @@ variable "name_prefix" {
   description = "The prefix to place on all created resources"
   type        = "string"
 }
-
-variable "ssm_kms_key_arn" {
-  default     = ""
-  description = "The arn of the KMS key used to encryption and decryption of SecureString parameters, default the system uses the default key associated with your AWS account"
-  type        = "string"
-}
