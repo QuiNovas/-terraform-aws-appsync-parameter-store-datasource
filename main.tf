@@ -2,7 +2,7 @@ module "parameter_store_resolver" {
   dead_letter_arn = var.dead_letter_arn
   handler         = "function.handler"
   kms_key_arn     = var.kms_key_arn
-  l3_object_key   = "quinovas/appsync-parameter-store-resolver/appsync-parameter-store-resolver-0.0.1.zip"
+  l3_object_key   = "quinovas/appsync-parameter-store-resolver/appsync-parameter-store-resolver-0.0.2.zip"
   name            = "${var.name_prefix}appsync-parameter-store-resolver"
 
   policy_arns = [
