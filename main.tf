@@ -11,7 +11,7 @@ module "parameter_store_resolver" {
   runtime = "python3.7"
   source  = "QuiNovas/lambdalambdalambda/aws"
   timeout = 300
-  version = "3.0.1"
+  version = "3.0.4"
 }
 
 resource "aws_iam_policy" "parameter_store_resolver" {
@@ -25,6 +25,6 @@ module "appsync_lambda_datasource" {
   lambda_function_arn      = module.parameter_store_resolver.arn
   name                     = "${replace(var.name_prefix, "-", "_")}ParameterStoreResolver"
   source                   = "QuiNovas/appsync-lambda-datasource/aws"
-  version                  = "3.0.0"
+  version                  = "3.0.4"
 }
 
